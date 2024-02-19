@@ -23,7 +23,7 @@ if __name__ == '__main__':
     # face recognition model initialization
     print('Loading face recognition model ...')
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
-    anchor_dir = './dataset/ARS/images/anchors'
+    anchor_dir = './anchors'
     ckpt_path = './weights/best.pth'
     model = MobilenetV2Embedding()
     model = model.to(device)
